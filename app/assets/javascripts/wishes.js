@@ -8,7 +8,9 @@ jQuery(function() {
         $('.pagination').text("Loading more wishes...");
         //return $.getScript(url);
         //return $.ajax url: url, format: 'js'
+        alert("heyhey");
         return $.ajax url: url, format: 'js'
+      
     //     $.ajax({
 		  //   url: url,
 		  //   format: 'js',
