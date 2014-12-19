@@ -1,0 +1,144 @@
+html {
+	background: url(bg.png);
+	background-size: 100% auto; 
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	border: none;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+
+	
+}
+
+
+body {
+	color: white;
+	background: none;
+	border: none;
+	font-family: "Helvetica Neue";
+	margin: 0;
+	padding: 0;
+
+
+	
+/*
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    font-size: 26px;
+    font-weight: 100px;
+
+
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*background-size: auto auto;*/
+
+
+}
+
+a {
+	color: white;
+}
+
+a img {
+	border:none;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	border: none;
+	background-color: none;
+}
+
+.main {
+	border: none;
+}
+
+
+
+#question {
+	text-align: center;
+	font-weight: 400;
+	font-size: 48px;
+}
+
+#answer {
+	text-align: center;
+	font-weight: 200;
+	font-size: 38px;
+}
+
+#wish_input {
+	border: none;
+	color: white;
+	-webkit-appearance: none;
+	background: none;
+	border-bottom: 5px solid white;
+	width: 600px;
+	font-size: 38px;
+	font-weight: 200;
+}
+
+
+.wish {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+#wishes {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.paginate {
+	text-align: center;
+	/*padding-bottom: 10px;*/
+}
+
+
+
+#wish_input:focus {
+  outline-color: transparent;
+  outline-style: none;
+  -webkit-appearance: none;
+}
+
+
+
+ @media screen and (max-width: 480px) {
+ 	html {
+ 		background-size: 100% 100%; 
+ 	}
+
+ }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
