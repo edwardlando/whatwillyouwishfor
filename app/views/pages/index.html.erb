@@ -26,7 +26,13 @@
 <script>
     // Submit form on press enter
 	jQuery('#wish_input').keypress(function(e) {
+		
+	 if( $('#wish_input').val().length === 0 ) {
+	 	return;
+	 }
+
 	    if (e.keyCode == 13 && !e.shiftKey) {
+	    	alert("ro");
 	        e.preventDefault();
 	        var frm = $(this).closest("form");  
 	        jQuery.ajax({http://dba.stackexchange.com/questions/86526/is-it-advisable-to-use-a-temp-table-when-the-stored-procedure-could-be-run-simul
@@ -38,22 +44,7 @@
 	    }
 	});
 
-	// jQuery(function() {
-	//   if ($('.pagination').length) {
-	//     $(window).scroll(function() {
-	//       var url;
-	//       url = $('.pagination .next_page').attr('href');
-	//       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
-	//       	alert ("time to load them wishes");
-	//         $('.pagination').text("Loading more wishes...");
-	//         return $.getScript(url);
-	//       }
-	//     });
-	//     return $(window).scroll();
-	//   }
-	// });
-
-
+	
 
     
 </script>
