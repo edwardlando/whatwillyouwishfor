@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iwish</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+
+
+  <%= csrf_meta_tags %>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- for Facebook -->          
+  <meta property="og:title" content=" I wish" />
+  <meta property="og:type" content="site" />
+  <meta property="og:image" content="http://www.whatwillyouwishfor.com/assets/b.png" />
+  <meta property="og:url" content="http://www.whatwillyouwishfor.com" />
+  <meta property="og:description" content="What will you wish for?" />
+
+  <% if Rails.env.production? %>
+    <!-- Google analytics -->
+
+  <% end %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+
+
+
+
+

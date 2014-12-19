@@ -1,0 +1,128 @@
+html {
+	background: url(bg.png);
+	background-size: 100% auto; 
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	border: none;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+
+	
+}
+
+
+body {
+	color: white;
+	background: none;
+	border: none;
+	font-family: "Helvetica Neue";
+	margin: 0;
+	padding: 0;
+
+
+	
+/*
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    font-size: 26px;
+    font-weight: 100px;
+
+
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*background-size: auto auto;*/
+
+
+}
+
+a {
+	color: white;
+}
+
+a img {
+	border:0;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	border: none;
+	background-color: none;
+}
+
+.main {
+	border: none;
+}
+
+
+
+#question {
+	text-align: center;
+	font-weight: 400;
+	font-size: 48px;
+}
+
+#answer {
+	text-align: center;
+	font-weight: 200;
+	font-size: 38px;
+}
+
+#wish_input {
+	border: none;
+	color: white;
+	-webkit-appearance: none;
+	background: none;
+	border-bottom: 5px solid white;
+	width: 600px;
+	font-size: 38px;
+	font-weight: 200;
+}
+
+
+.wish {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+#wishes {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.paginate {
+	text-align: center;
+	/*padding-bottom: 10px;*/
+}
+
+
+
+#wish_input:focus {
+  outline-color: transparent;
+  outline-style: none;
+  -webkit-appearance: none;
+}
+
+
+
+ @media screen and (max-width: 480px) {
+ 	html {
+ 		background-size: 100% 100%; 
+ 	}
+
+ }

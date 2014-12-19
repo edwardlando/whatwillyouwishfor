@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="main">
+		<p id="question">What will you wish for?</p>
+
+		<div id="answer">
+			<%= form_for(@wish, url: "wish", remote: true) do |f| %>
+			  <span>I wish</span> 
+			  <%= f.text_field :content, :maxlength => 300, :id => "wish_input" %>
+			  <%= f.submit "Post", :id => "submit", :style => "display: none;"  %>
+			<% end %>
+		</div>
+
+	  
+	  <div id="wishes">
+		<%= render @wishes %>
+	  </div>
+
+	  <%= will_paginate @wishes %>
+
+	 
+	</div>
+</div>
+
+
+
+<script>
+    // Submit form on press enter
+	jQuery('#wish_input').keypress(function(e) {
+	    if (e.keyCode == 13 && !e.shiftKey) {
+	        e.preventDefault();
+	        var frm = $(this).closest("form");  
+	        jQuery.ajax({http://dba.stackexchange.com/questions/86526/is-it-advisable-to-use-a-temp-table-when-the-stored-procedure-could-be-run-simul
+	            url: frm.attr("action"),
+	            data: frm.serialize(),
+	            success: {},
+	            dataType: Json
+	        });
+	    }
+	});
+
+	// jQuery(function() {
+	//   if ($('.pagination').length) {
+	//     $(window).scroll(function() {
+	//       var url;
+	//       url = $('.pagination .next_page').attr('href');
+	//       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+	//       	alert ("time to load them wishes");
+	//         $('.pagination').text("Loading more wishes...");
+	//         return $.getScript(url);
+	//       }
+	//     });
+	//     return $(window).scroll();
+	//   }
+	// });
+
+
+
+    
+</script>

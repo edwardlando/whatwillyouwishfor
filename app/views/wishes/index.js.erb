@@ -1,0 +1,7 @@
+$('#wishes').append('<%= j render(@wishes) %>');
+alert("yo");
+<% if @wishes.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@wishes) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>
